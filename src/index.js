@@ -17,7 +17,7 @@ const isWebWorker =
  */
 const isJsDom =
   (typeof window !== "undefined" && window.name === "nodejs") ||
-  (typeof navigator !== "undefined" &&
+  (typeof navigator !== "undefined" && navigator.userAgent &&
     (navigator.userAgent.includes("Node.js") ||
       navigator.userAgent.includes("jsdom")));
 
