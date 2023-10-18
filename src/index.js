@@ -15,6 +15,9 @@ const isWebWorker =
  * @see https://github.com/jsdom/jsdom/releases/tag/12.0.0
  * @see https://github.com/jsdom/jsdom/issues/1537
  */
+
+console.log("HELLO FROM BROWSER OR NODE")
+
 const isJsDom =
   (typeof window !== "undefined" && window.name === "nodejs") ||
   (typeof navigator !== "undefined" && navigator.userAgent &&
